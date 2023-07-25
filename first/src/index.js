@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+//imports the app from app.js so all components there  can directly use here.....
+
 import App from './App';
+
+// all components use directly here
+
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//rendering to the html file
 root.render(
   <React.StrictMode>
     <App />
+    {/* here they use the App from app.js... */}
   </React.StrictMode>
 );
 
