@@ -6,6 +6,12 @@ import './App.css';
 import  Header from './components/Header';
 import Counter from './components/Counter';
 import Greeting from './components/Greeting'; // Import the Greeting component
+import Button from './components/Button';
+import LoginForm from './components/LoginForm';
+
+import TodoList from './components/TodoList'
+import TaskList from './components/TaskList'
+
 
 const isLoggedIn = true; // Replace this with your actual login state
 
@@ -30,14 +36,19 @@ function App() {
     // </div>
 
 
-    <div>
-    <Header/>
-    <p><Counter/></p>
-    
-  <div><Greeting isLoggedIn={isLoggedIn} /></div>
+      <div>
+            <Button/>
+            <Header/>
+            <p><Counter/></p>
+            <div><Greeting isLoggedIn={isLoggedIn} /></div>
+            <Button/>
 
+            <LoginForm/>
+            <TaskList/>
+            <TodoList/>
 
-    </div>
+          
+      </div>
     
   );
 
